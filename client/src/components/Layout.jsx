@@ -71,7 +71,7 @@ export default function Layout({ children }) {
           <div className="h-16 flex items-center justify-between gap-3 sm:gap-5">
             {/* Logo + Location */}
             <div className="flex items-center gap-4 shrink-0">
-              <Link to="/" aria-label="Shuka Home">
+              <Link to="/" aria-label="Shuka Marketplace Home">
                 <ShukaLogo size="md" showTagline />
               </Link>
 
@@ -359,7 +359,7 @@ export default function Layout({ children }) {
       <footer className="bg-[#0F172A] text-slate-400 text-xs mt-16 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div className="space-y-2">
-            <Link to="/" aria-label="Shuka Home">
+            <Link to="/" aria-label="Shuka Marketplace Home">
               <ShukaLogo size="sm" showTagline={false} />
             </Link>
             <p className="text-slate-400 leading-relaxed max-w-xs">

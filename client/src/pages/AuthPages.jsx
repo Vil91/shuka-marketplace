@@ -33,7 +33,7 @@ function AuthShell({ mode, next, children }) {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/85 via-[#0F172A]/80 to-[#0F172A]/95" />
 
         <div className="relative z-10 space-y-6">
-          <Link to="/" aria-label="Shuka Home">
+          <Link to="/" aria-label="Shuka Marketplace Home">
             <ShukaLogo size="md" showTagline />
           </Link>
 

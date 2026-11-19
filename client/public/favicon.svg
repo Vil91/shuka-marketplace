@@ -1,17 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="shukaGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+    <linearGradient id="shukaGrad" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#FBBF24"/>
       <stop offset="55%" stop-color="#F97316"/>
       <stop offset="100%" stop-color="#DC2626"/>
     </linearGradient>
+    <linearGradient id="archShine" x1="16" y1="16" x2="48" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#FEF3C7" stop-opacity="0.92"/>
+    </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="url(#shukaGrad)"/>
-  <!-- Bag handle -->
-  <path d="M22 23V19C22 13.5 26.5 9 32 9C37.5 9 42 13.5 42 19V23" stroke="#0F172A" stroke-width="4.2" stroke-linecap="round"/>
-  <!-- Stylized shopping bag body -->
-  <path d="M14 23H50L47.2 48.5C46.8 52.2 43.7 55 40 55H24C20.3 55 17.2 52.2 16.8 48.5L14 23Z" fill="#0F172A"/>
-  <!-- Twin-peak Ararat + market smile accent inside bag -->
-  <path d="M21 41L27.5 32.5L32.5 38L37.5 30.5L43 41" stroke="#FBBF24" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M23 46.5C27.5 49.5 36.5 49.5 41 46.5" stroke="#FB923C" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- Rounded squircle emblem -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#shukaGrad)"/>
+  <!-- Market bag + Yerevan arch silhouette -->
+  <path d="M22 23V19C22 13.477 26.477 9 32 9C37.523 9 42 13.477 42 19V23" stroke="#0F172A" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M15 24.5C15 22.567 16.567 21 18.5 21H45.5C47.433 21 49 22.567 49 24.5L46.4 48.2C46.05 51.35 43.39 53.75 40.22 53.75H23.78C20.61 53.75 17.95 51.35 17.6 48.2L15 24.5Z" fill="#0F172A"/>
+  <!-- Stylized S / smiling delivery arc inside bag -->
+  <path d="M24 34.5C26.5 39.2 31.2 41.2 38.5 38.2" stroke="url(#archShine)" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M35.5 35.2L40.5 37.6L38.2 42.4" stroke="#FBBF24" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Small pomegranate-ruby crown accent -->
+  <circle cx="32" cy="29" r="3" fill="#FBBF24"/>
 </svg>
