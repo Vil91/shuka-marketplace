@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { api } from '../lib/api';
 import { useAuth } from '../context/AuthContext';
+import ShukaLogo from './ShukaLogo';
 
 export default function Layout({ children }) {
   const { user, cartCount, logout } = useAuth();
@@ -70,18 +71,8 @@ export default function Layout({ children }) {
           <div className="h-16 flex items-center justify-between gap-3 sm:gap-5">
             {/* Logo + Location */}
             <div className="flex items-center gap-4 shrink-0">
-              <Link to="/" className="flex items-center gap-2.5 group">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 font-black text-lg tracking-tight shadow-sm group-hover:scale-105 transition">
-                  S
-                </span>
-                <div className="leading-none">
-                  <div className="font-display font-extrabold text-xl tracking-tight text-white">
-                    shuka
-                  </div>
-                  <div className="text-[10px] text-amber-400 font-bold uppercase tracking-widest mt-0.5">
-                    armenia
-                  </div>
-                </div>
+              <Link to="/" aria-label="Shuka Home">
+                <ShukaLogo size="md" showTagline />
               </Link>
 
               <div className="hidden xl:flex items-center gap-1.5 text-xs text-slate-300 border-l border-slate-700/80 pl-4">
@@ -368,12 +359,9 @@ export default function Layout({ children }) {
       <footer className="bg-[#0F172A] text-slate-400 text-xs mt-16 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 font-black text-sm">
-                S
-              </span>
-              <span className="font-display font-extrabold text-base text-white">shuka</span>
-            </div>
+            <Link to="/" aria-label="Shuka Home">
+              <ShukaLogo size="sm" showTagline={false} />
+            </Link>
             <p className="text-slate-400 leading-relaxed max-w-xs">
               Armenia&apos;s local marketplace. Shop across independent Armenian stores in one cart and pay cash in AMD upon delivery.
             </p>

@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { api } from '../lib/api';
 import { useAuth } from '../context/AuthContext';
+import ShukaLogo from '../components/ShukaLogo';
 
 function AuthShell({ mode, next, children }) {
   const qs = next && next !== '/' ? `?next=${encodeURIComponent(next)}` : '';
@@ -32,16 +33,8 @@ function AuthShell({ mode, next, children }) {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/85 via-[#0F172A]/80 to-[#0F172A]/95" />
 
         <div className="relative z-10 space-y-6">
-          <Link to="/" className="inline-flex items-center gap-2.5">
-            <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 font-black text-lg shadow-sm">
-              S
-            </span>
-            <div className="leading-none">
-              <div className="font-display font-extrabold text-xl tracking-tight text-white">shuka</div>
-              <div className="text-[10px] text-amber-400 font-bold uppercase tracking-widest mt-0.5">
-                armenia
-              </div>
-            </div>
+          <Link to="/" aria-label="Shuka Home">
+            <ShukaLogo size="md" showTagline />
           </Link>
 
           <div className="space-y-2">
